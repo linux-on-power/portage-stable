@@ -21,7 +21,7 @@ src_configure() {
 
 src_install() {
 	default
-	gen_usr_ldscript -a mnl
+#	gen_usr_ldscript -a mnl
 	prune_libtool_files
 
 	if use examples; then

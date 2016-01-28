@@ -88,7 +88,7 @@ src_install() {
 	fi
 
 	# Move important libs to /lib #332175
-	gen_usr_ldscript -a ip{4,6}tc iptc xtables
+#	gen_usr_ldscript -a ip{4,6}tc iptc xtables
 
 	prune_libtool_files
 }

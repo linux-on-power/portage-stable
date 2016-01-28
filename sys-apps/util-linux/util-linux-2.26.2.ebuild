@@ -42,11 +42,11 @@ RDEPEND="!sys-process/schedutils
 	selinux? ( >=sys-libs/libselinux-2.2.2-r4[${MULTILIB_USEDEP}] )
 	slang? ( sys-libs/slang )
 	systemd? ( sys-apps/systemd )
-	udev? ( virtual/libudev:= )
 	abi_x86_32? (
 		!<=app-emulation/emul-linux-x86-baselibs-20150406-r2
 		!app-emulation/emul-linux-x86-baselibs[-abi_x86_32]
 	)"
+	#udev? ( virtual/libudev:= )
 DEPEND="${RDEPEND}
 	virtual/pkgconfig
 	nls? ( sys-devel/gettext )

@@ -21,12 +21,12 @@ RDEPEND="${DEPEND}"
 DOCS="ANNOUNCE AUTHORS ChangeLog NEWS README THANKS USERS"
 
 src_prepare() {
-	epatch "${FILESDIR}"/${PN}-2.0.5-parallelfix.patch
-	epatch "${FILESDIR}"/${PN}-2.0.6-ldflags.patch
-	epatch "${FILESDIR}"/${PN}-2.0.6-sigstack.patch
-	epatch "${FILESDIR}"/${PN}-2.0.7-parallel-install.patch
-	epatch "${FILESDIR}"/${PN}-2.0.7-ia64.patch
-	epatch "${FILESDIR}"/${PN}-2.0.7-kernel-3.patch
+#	epatch "${FILESDIR}"/${PN}-2.0.5-parallelfix.patch
+#	epatch "${FILESDIR}"/${PN}-2.0.6-ldflags.patch
+#	epatch "${FILESDIR}"/${PN}-2.0.6-sigstack.patch
+#	epatch "${FILESDIR}"/${PN}-2.0.7-parallel-install.patch
+#	epatch "${FILESDIR}"/${PN}-2.0.7-ia64.patch
+#	epatch "${FILESDIR}"/${PN}-2.0.7-kernel-3.patch
 
 	ht_fix_file aclocal.m4 configure
 

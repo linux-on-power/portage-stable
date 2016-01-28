@@ -56,7 +56,7 @@ multilib_src_install() {
 
 	if multilib_is_native_abi; then
 		# we install attr into /bin, so we need the shared lib with it
-		gen_usr_ldscript -a attr
+#		gen_usr_ldscript -a attr
 		# the man-pages packages provides the man2 files
 		# note: man-pages are installed by TOOL_SUBDIRS
 		rm -r "${ED}"/usr/share/man/man2 "${ED}"/usr/share/man/man5/attr.5 || die

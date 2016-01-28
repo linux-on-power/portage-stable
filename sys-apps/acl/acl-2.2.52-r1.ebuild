@@ -51,7 +51,8 @@ multilib_src_install() {
 	emake DIST_ROOT="${D}" install install-dev install-lib
 
 	# move shared libs to /
-	multilib_is_native_abi && gen_usr_ldscript -a acl
+#	multilib_is_native_abi && gen_usr_ldscript -a acl
+	multilib_is_native_abi
 }
 
 multilib_src_install_all() {
